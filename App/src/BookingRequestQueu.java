@@ -1,12 +1,11 @@
-// File: UseCase5BookingRequestQueue.java
 
 import java.util.*;
 
 // Represents a guest's booking intent
 class Reservation {
-private String guestName;
-private String roomType;
-private int nights;
+    private String guestName;
+    private String roomType;
+    private int nights;
 
     public Reservation(String guestName, String roomType, int nights) {
         this.guestName = guestName;
@@ -36,7 +35,7 @@ private int nights;
 
 // Booking request queue using FIFO principle
 class BookingRequestQueue {
-private Queue<Reservation> requestQueue;
+    private Queue<Reservation> requestQueue;
 
     public BookingRequestQueue() {
         requestQueue = new LinkedList<>();
@@ -68,9 +67,9 @@ private Queue<Reservation> requestQueue;
 }
 
 // Main program
-public class UseCase5BookingRequestQueue {
-public static void main(String[] args) {
-BookingRequestQueue bookingQueue = new BookingRequestQueue();
+public class BookingRequestQueue {
+    public static void main(String[] args) {
+        BookingRequestQueue bookingQueue = new BookingRequestQueue();
 
         // Simulate booking requests arriving
         bookingQueue.addRequest(new Reservation("Alice", "Single", 2));
